@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en" data-ng-app="bookRentalShop">
+<head>
+<meta charset="utf-8">
+<title>Welcome to BookShop</title>
+<!-- jQuery library --> 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
+<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular-route.js"></script>
+<script src="app.config.js"></script> 
+<!-- <script src="book.module.js"></script> -->
+<script src="bookList.component.js"></script>
+<script src="addCustomer.component.js"></script>
+<script src="customers.component.js"></script>
+<script src="customerData.service.js"></script>
+<!-- <script src="/WEB-INF/lib/bootstrap.min.js"></script>
+<script src="/WEB-INF/lib/angular.js"></script>
+<link rel="stylesheet" href="WEB-INF/lib/bootstrap.min.css"></link> -->
+</head>
+<body>
+<div class="container">
+<div class="row">
+<div class="col-sm-2" style="margin-top:50px;">
+<ul class="nav nav-pills nav-stacked">
+<li><a href="#books">Books</a></li>
+<li><a href="#addCustomer">Add Customer</a></li>
+<li><a href="#customers">Customers</a></li>
+</ul>
+</div>
+<div class="col-sm-10" style="margin-top:10px;" ng-view></div>
+</div>
+</div>
+
+</body>
+</html>
