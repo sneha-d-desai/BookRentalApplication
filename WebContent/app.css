@@ -1,0 +1,58 @@
+/* Remove the navbar's default margin-bottom and rounded borders */
+.navbar {
+	margin-bottom: 0;
+	border-radius: 0;
+}
+
+nav.navbar-inverse {
+	background-color: #3b5998;
+}
+
+.navbar1 {
+	margin-bottom: 0;
+	border-radius: 0;
+	height: 40px;
+}
+
+.navbar-inverse1 {
+	background-color: #a4c0f4;
+}
+
+/* Set height of the grid so .sidenav can be 100% (adjust as needed) */
+.row.content {
+	height: 600px;
+}
+
+/* Set gray background color and 100% height */
+.sidenav {
+	padding-top: 20px;
+	margin-right:-15px;
+	background-color: #f1f1f1;
+	height: 100%;
+}
+
+.navbar-brand {
+	color: white;
+}
+
+.showError {
+	color: red;
+}
+
+@media screen and (max-width: 770px) {
+	.sidenav {
+		height: auto;
+		padding: 15px;
+	}
+	.row.content {
+		height: auto;
+	}
+}
+
+.glyphicon-book {
+	font-size: 20px;
+}
+
+.glyphicon-user {
+	font-size: 40px;
+}

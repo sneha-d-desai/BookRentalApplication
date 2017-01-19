@@ -1,0 +1,51 @@
+<table style="outline:1px solid black;width:102%">
+<tr>
+<td>
+<nav class="navbar1 navbar-inverse1">
+<div class="container-fluid" >
+<div class="form-group">
+<h4 class="col-sm-3" style="color:white;">Customers Book Status</h4> 
+<div class="col-sm-offset-6 col-sm-3 has-feedback" style="margin-top:5px;">
+<input type="text" id="searchBok" class="form-control input-sm" ng-model="searchBok" 
+Placeholder="Search Book" /><span class="glyphicon glyphicon-search form-control-feedback" 
+style="margin-right:15px;"></span>
+</div>
+</div>
+</div>
+</nav>
+<td>
+</tr>
+<tr>
+<td>
+<table class="table table-striped text-center">
+<thead>
+<tr style="background-color:#99ffff">
+<th class="text-center">Customer Name</th>
+<th class="text-center">Telephone</th>
+<th class="text-center">Email Id</th>
+<th class="text-center">Book Name</th>
+<th class="text-center">From Date</th>
+<th class="text-center">To Date</th>
+<th class="text-center">Total Rent</th>
+<th class="text-center">Book Status</th>
+<th class="text-center"></th>
+</tr>
+</thead>
+<tbody>
+<tr ng-repeat="data in custBookStatusData | filter:searchBok" >
+<td>{{data.custName}}</td>
+<td>{{data.custTel}}</td>
+<td>{{data.custEmail}}</td>
+<td>{{data.bookTitle}}</td>
+<td>{{data.fromDate}}</td>
+<td>{{data.toDate}}</td>
+<td>{{data.totalRent}}</td>
+<td ng-if="data.bookStatus == 'Borrowed'" style="color:red">{{data.bookStatus}}</td>
+<td ng-if="data.bookStatus == 'Returned'" style="color:green">{{data.bookStatus}}</td>
+<td><button class="btn btn-success" ng-show="data.bookStatus == 'Borrowed'" ng-click="returnBook(data.bookId,data.bookStatus)">Return</button></td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</table>

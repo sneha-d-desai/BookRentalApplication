@@ -1,0 +1,83 @@
+{
+    "books": [
+        {
+            "BookId": "1",
+            "Category": "Cooking",
+            "Desciption": "The Zone Food Science Ranking SystemDr Barry Sears takes you on a tour of the top 100 Zonefoods, offering capsule summaries of their nutritionalbenefits, along with delicious recipes and Zone Food Blockinformation for each food item.",
+            "Language": "English",
+            "ImageUrl": "book-images/The Top 100 Zone Foods_01.jpg",
+            "Title": "The Top 100 Zone Foods",
+            "Author": "Barry Sears",
+            "Published": "28 Dec 2004",
+            "Publisher": "Avon",
+            "RentAmount": "2",
+            "Status": "Available"
+        },
+        {
+            "BookId": "2",
+            "Category": "Cooking",
+            "Desciption": "Over 300 Recipes for Plant-Based Eating All Through the YearNew York Times Bestseller. A whole-foods, plant-based diet thathas never been easier or tastier\u2014learn to cook the Forks Over Knivesway with more than 300 recipes for every day!",
+            "Language": "English",
+            "ImageUrl": "book-images/Forks Over Knives_01.jpg",
+            "Title": "Forks Over Knives",
+            "Author": "Del Sroufe",
+            "Published": "14 Aug 2012",
+            "Publisher": "The Experiment",
+            "RentAmount": "3",
+            "Status": "Available"
+        },
+        {
+            "BookId": "3",
+            "Category": "Romance",
+            "Desciption": "Quiero cambiar. Necesito cambiar. Estoy perdiendo el contacto conmigo misma.Adulterio, la provocativa nueva novela de Paulo Coelho, autor de El Alquimista y Once minutos, explora el verdadero significado de cómo llevar una vida plena yfeliz, y de cómo podemos equilibrar la rutina diaria con el deseo de algo nuevo",
+            "Language": "Spanish",
+            "ImageUrl": "book-images/Adulterio_01.jpg",
+            "Title": "Adulterio",
+            "Author": "Paulo Coelho",
+            "Published": "26 May 2015",
+            "Publisher": "Vintage Espanol",
+            "RentAmount": "2",
+            "Status": "Available"
+        },
+        {
+            "BookId": "4",
+            "Category": "Biography",
+            "Desciption": "Whether it\u2019s asking tough questions during a presidential debate or pressingfor answers to today\u2019s most important issues, Megyn Kelly has demonstrated theintelligence, strength, common sense, and courage that have made her one oftoday\u2019s best-known journalists, respected by women and men, young and old,Republicans and Democrats.",
+            "Language": "English",
+            "ImageUrl": "book-images/Settle for More_01.jpg",
+            "Title": "Settle for More",
+            "Author": "Megyn Kelly",
+            "Published": "15 Nov 2016",
+            "Publisher": "Harper",
+            "RentAmount": "5",
+            "Status": "Available"
+        },
+        {
+            "BookId": "5",
+            "Category": "Cooking",
+            "Desciption": "Learn to Cook Plant-Based Meals that Satisfy EveryonePOP QUIZ! Cooking healthy vegan meals at home is complicated and expensive. True or False?",
+            "Language": "English",
+            "ImageUrl": "book-images/Vegan 101_01.jpg",
+            "Title": "Vegan 101",
+            "Author": "Jenny Engel & Heather Bell",
+            "Published": "13 Oct 2016",
+            "Publisher": "Sonoma Press",
+            "RentAmount": "1",
+            "Status": "Available"
+        },
+        {
+            "BookId": "6",
+            "Category": "History",
+            "Desciption": "A vitally important story that needs to be understood by the public, and I cannot imaginean account that does it better justice that Romesha's. \u2014Sebastian Junger, journalistand author of The Perfect Storm",
+            "Language": "English",
+            "ImageUrl": "book-images/Red Platoon_01.jpg",
+            "Title": "Red Platoon",
+            "Author": "History",
+            "Published": "03 May 2016",
+            "Publisher": "Dutton",
+            "RentAmount": "2",
+            "Status": "Available"
+        }
+        
+    ]
+}

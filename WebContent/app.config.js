@@ -1,20 +1,24 @@
-angular.
-module('bookRentalShop',['ngRoute']).
+'use strict';
+
+angular.module('bookRentalShop').
 config(['$locationProvider','$routeProvider',
         function config($locationProvider,$routeProvider){
 	//$locationProvider.hashPrefix('!');
 	$routeProvider.
-	when('/books',{
-		//templateUrl:"getBookList.html"
+	when('/',{
 		template: '<book-list></book-list>'
 	}).
+	when('/books',{
+		template: '<book-list></book-list>'
+	}).
+	when('/booksStatus',{
+		template: '<book-status></book-status>'
+	}).
 	when('/addCustomer',{
-		//templateUrl:"addCustomer.html"
 		template: '<add-customer></add-customer>'
 	}).
 	when('/customers',{
-		//templateUrl:"addCustomer.html"
 		template: '<customer-list></customer-list>'
-	});
-
+	}).
+	otherwise({redirectTo : '/'});
 }]);

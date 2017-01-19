@@ -1,0 +1,58 @@
+<div class="row col-sm-7 alert alert-info"
+ style="margin-left:10px; display:table; #position:relative; overflow:hidden;">
+  <span class="glyphicon glyphicon-user"></span> 
+  <p style="#position:absolute; #top:50%; display:table-cell; vertical-align: middle;">
+  Add new Customer. Make sure you add all the required fields. 
+  </p>
+</div>
+<br/>
+
+<div class="row col-sm-12">
+<form class="form-horizontal" name="custForm" ng-submit="submitAddCustomer()" novalidate>
+<div class="form-group">
+<label class="control-label col-sm-2" for="custName">Customer Name:</label>
+<div class="col-sm-5">
+<input type="text" name="custName" class="form-control" ng-model="custName" 
+placeholder="Customer Name" required/>
+</div>
+<div class="showError" ng-show="custForm.$submitted || custForm.custName.$touched" >
+<span ng-show="custForm.custName.$error.required">* Customer Name is Required</span>
+</div>
+</div>  
+<div class="form-group">
+<label class="control-label col-sm-2" for="custTel">Customer Telephone:</label>
+<div class="col-sm-5">
+<input type="text" name="custTel" class="form-control" ng-model="custTel" valid-number maxlength="10" minlength="8" 
+ng-pattern="^[0-9]+$" placeholder="Customer Telephone" required/>
+</div>
+<div class="showError" ng-show="custForm.$submitted || custForm.custTel.$touched" >
+<span ng-show="custForm.custTel.$error.required">* Customer Telephone is Required</span>
+<span ng-show="!custForm.custTel.$error.required && custForm.custTel.$invalid">* Customer Telephone is invalid</span>
+</div>
+</div>
+<div class="form-group">
+<label class="control-label col-sm-2" for="custAdd">Customer Address:</label>
+<div class="col-sm-5">
+<input type="text" name="custAdd" class="form-control" ng-model="custAdd" placeholder="Customer Address" required/>
+</div>
+<div class="showError" ng-show="custForm.$submitted || custForm.custAdd.$touched" >
+<span ng-show="custForm.custAdd.$error.required">* Customer Address is Required</span>
+</div>
+</div>
+<div class="form-group">
+<label class="control-label col-sm-2" for="custEmail">Customer Email:</label>
+<div class="col-sm-5">
+<input type="email" name="custEmail" class="form-control" ng-model="custEmail" placeholder="Customer Email" required/>
+</div>
+<div class="showError" ng-show="custForm.$submitted || custForm.custEmail.$touched" >
+<span ng-show="custForm.custEmail.$error.required">* Customer Email is Required</span>
+</div>
+</div>
+ <span ng-model="index" ng-value="{{$index}}"></span>
+ <div class="form-group">        
+<div class="col-sm-offset-2 col-sm-5">
+<input type="submit" value="Submit" ng-disabled="custForm.$invalid" class="btn btn-primary"/>
+</div>
+</div>
+</form>
+</div>

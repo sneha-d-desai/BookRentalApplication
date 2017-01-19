@@ -1,0 +1,77 @@
+<table style="width:102%;">
+<tr>
+<td>
+<nav class="navbar1 navbar-inverse1">
+<div class="container-fluid">
+	 <div class="row" > 
+	 <div class="col-sm-3" ><h4 style="color:white;">Book Rental Home</h4></div>
+	<div class="col-sm-offset-2 col-sm-7">
+	<table style="margin-top:5px">
+	<tr>
+	<td style="padding-right:40px;"></td>
+	<td style="padding-right:2px;">
+		<label  for="bookCat">Book Category:</label> 
+	</td>
+	<td style="padding-right:6px  ">
+		<select id="bookCat" ng-model='bookCat' class="form-control input-sm">
+		    <option></option>
+			<option value="Biography">Biography</option>
+			<option value="Education">Education</option>
+			<option value="Children">Children's</option>
+			<option value="Cooking">Cooking and Food</option>
+			<option value="Romance">Romantic</option>
+			<option value="Entertainment">Arts and Entertainment</option>
+		</select> 
+	</td>
+	<td style="padding-right:2px;">
+	   <label for="searchBok" style="text-align:right;">Search Book:</label> 
+	</td>
+	<td class="has-feedback">
+		<input type="text"  id="searchBok" ng-model="searchBok" class="form-control input-sm" Placeholder="Enter Book Name" />
+		<span class="glyphicon glyphicon-search form-control-feedback"></span>
+	</td>
+	</tr>
+	</table>
+</div>
+</div>
+</div>
+</nav>
+<td>
+</tr>
+<tr>
+<td>
+	<ul style="list-style: none;">
+		<li ng-repeat="book in booksDataInJson | filter:bookCat | filter:{Title:searchBok}">
+			<table class="col-sm-5 thumbnail" style="margin:10px;">
+				<tr>
+					<td class="col-sm-2">
+					<a ng-if="book.Status == 'Available'" href="javascript:void(0);" ng-click="open(book.BookId);" style="height:400px;width:400px;overflow:hidden;"> 
+						<img ng-src="{{book.ImageUrl}}" alt="{{book.Title}}" class="img-responsive" style="overflow:hidden;width:200px;height:150px;"/>
+					</a>
+					<a ng-if="book.Status == 'Rented Out'" href="javascript:void(0);" style="height:400px;width:400px;overflow:hidden;"> 
+                        <img ng-src="{{book.ImageUrl}}" alt="{{book.Title}}" class="disabled img-responsive" style="overflow:hidden;width:200px;height:150px;"/>
+                    </a>
+					</td>
+					<td class="col-sm-offset-2 col-sm-3">
+					   
+					   <h5  ng-if="book.Status == 'Available'"  style="margin-top: 0px;">
+					   <a href="javascript:void(0);" ng-click="open(book.BookId);">{{book.Title}}</a>
+					   </h5>
+					   
+                       <h5 ng-if="book.Status == 'Rented Out'" style="margin-top: 0px;">
+                       <a href="javascript:void(0);">{{book.Title}}
+                       </a>
+                       </h5>
+						<p>Category : {{book.Category}}</p>
+						<p>Author : {{book.Author}}</p>
+						<p>Rental Rate: {{book.RentAmount}}$</p>
+						<h6 ng-if="book.Status == 'Available'" style="color:green;">{{book.Status}}</h6>
+						<h6 ng-if="book.Status == 'Rented Out'" style="color:red;">{{book.Status}}</h6>
+					</td>
+				</tr>
+				</table>
+		</li>
+	</ul>
+</td>
+</tr>
+</table>
