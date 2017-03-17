@@ -4,3 +4,5 @@ In this application, shopkeeper can rent the book to the customer for certain pe
 Home Screen
 
 ![image](https://cloud.githubusercontent.com/assets/24415564/24039366/30afbcce-0b05-11e7-90e5-f43f314952d9.png)
+
+![image](https://cloud.githubusercontent.com/assets/24415564/24039561/fbd856d6-0b05-11e7-99da-fb72782c8a14.png)
