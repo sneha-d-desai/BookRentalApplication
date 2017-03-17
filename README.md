@@ -5,4 +5,4 @@ Home Screen
 
 ![image](https://cloud.githubusercontent.com/assets/24415564/24039366/30afbcce-0b05-11e7-90e5-f43f314952d9.png)
 
-![image](https://cloud.githubusercontent.com/assets/24415564/24039648/3fa60728-0b06-11e7-9081-a08593fb0c72.png)
+![image](https://cloud.githubusercontent.com/assets/24415564/24039766/aad3551e-0b06-11e7-8945-336d349563a3.png)
