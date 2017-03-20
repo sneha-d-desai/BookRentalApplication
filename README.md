@@ -1,5 +1,9 @@
 # BookRentalApplication
-Using this application, shopkeeper can rent the book to the customer for certain time period. Shopkeeper can add/delete the customer details which will be added as member of that bookshop. Shopkeeper can update the status of the books once it is Borrowed/Return by the customer. 
+Using this application, shopkeeper can rent the book to the customer for certain time period and can track the status of books. This is like Library Management System but as it is designed for renting the book, it calculats the rent amount automatically based on number of days the book is borrowed with some latest technologies used for designing. Shopkeeper can add/delete the customer details which will be added as member of that bookshop. Shopkeeper can update the status of the books once it is Borrowed/Return by the customer. 
+
+It gives you feel of Single Page Application as it is designed using Angular JS. Bootstrap features makes this application adaptable. Currently application reads the books data from JSON file. Leter it can be changed to read from database.
+
+More functionalities can be easily added in the future because it is scalable.
 
 Technologies Used:- Angular JS | JSON | Bootstrap | HTML | CSS.
 
